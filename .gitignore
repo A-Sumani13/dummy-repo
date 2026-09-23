@@ -1,0 +1,70 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.*
+jspm_packages/
+bower_components/
+vendor/
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+
+# Build output
+dist/
+build/
+out/
+.next/
+.nuxt/
+.svelte-kit/
+.output/
+.vercel/
+.netlify/
+.expo/
+target/
+*.class
+
+# Caches
+.cache/
+.parcel-cache/
+.turbo/
+.eslintcache
+.stylelintcache
+*.tsbuildinfo
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# OS & editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+
+# Archives & large binaries
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.iso
+*.dmg
