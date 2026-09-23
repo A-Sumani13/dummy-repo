@@ -2,6 +2,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Menu from './components/Menu';
 import Gallery from './components/Gallery';
+import Ratings from './components/Ratings';
 import Reservation from './components/Reservation';
 import Footer from './components/Footer';
 
@@ -13,6 +14,7 @@ function App() {
         <Hero />
         <Menu />
         <Gallery />
+        <Ratings />
         <Reservation />
       </main>
       <Footer />
