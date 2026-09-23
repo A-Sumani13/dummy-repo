@@ -301,6 +301,119 @@ a {
     color: var(--text-secondary);
 }
 
+/* Community Section */
+.community {
+    padding: 6rem 1.5rem;
+}
+
+.community .section-header p {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    margin-top: 1rem;
+}
+
+.members-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+@media (min-width: 640px) {
+    .members-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .members-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.member-card {
+    background-color: var(--card-bg);
+    border: var(--border-width) solid var(--text-primary);
+    padding: 2rem 1.5rem;
+    text-align: center;
+    box-shadow: var(--solid-shadow);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+[data-theme="dark"] .member-card {
+    border-color: var(--border-color);
+}
+
+.member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 8px 8px 0px var(--accent);
+}
+
+.member-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: var(--border-width) solid var(--text-primary);
+    margin-bottom: 1rem;
+    object-fit: cover;
+    background-color: var(--bg-secondary);
+}
+
+[data-theme="dark"] .member-avatar {
+    border-color: var(--border-color);
+}
+
+.member-info h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.member-info p {
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.member-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.member-tag {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.75rem;
+    border: 2px solid var(--text-primary);
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+[data-theme="dark"] .member-tag {
+    border-color: var(--border-color);
+}
+
+.member-social {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.member-social a {
+    color: var(--text-secondary);
+    transition: color 0.2s ease;
+}
+
+.member-social a:hover {
+    color: var(--accent);
+}
+
 /* Contact Section */
 .contact {
     padding: 6rem 0;
