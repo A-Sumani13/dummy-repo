@@ -1,6 +1,7 @@
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { Programs } from './components/Programs';
+import { Courses } from './components/Courses';
 import { ContactForm } from './components/ContactForm';
 import { Footer } from './components/Footer';
 
@@ -11,6 +12,7 @@ function App() {
       <main className="flex-grow">
         <Hero />
         <Programs />
+        <Courses />
         <ContactForm />
       </main>
       <Footer />
@@ -19,3 +21,4 @@ function App() {
 }
 
 export default App;
+
