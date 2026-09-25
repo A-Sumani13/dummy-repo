@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Plus, Trash2, Check, AlertCircle, CalendarDays, User, UserCircle, Briefcase, Code2, Layout } from 'lucide-react';
+import { Plus, Trash2, Check, AlertCircle, CalendarDays, User, UserCircle, Briefcase, Code2, Layout, VolumeX } from 'lucide-react';
 
 type Priority = 'low' | 'medium' | 'high';
 
@@ -110,15 +110,20 @@ export default function App() {
     <div className="min-h-screen bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-indigo-100 via-blue-50 to-cyan-100 flex flex-col items-center justify-center p-4">
       {/* Toast Notification */}
       {toast && (
-        <div className={`fixed top-4 right-4 z-50 px-4 py-3 rounded-xl shadow-lg border text-sm font-medium animate-in fade-in slide-in-from-top-2 flex items-center gap-2 ${
+        <div className={`fixed top-4 right-4 z-50 px-4 py-3 rounded-xl shadow-lg border text-sm font-medium animate-in fade-in slide-in-from-top-2 flex items-center gap-3 ${
           toast.type === 'success' ? 'bg-emerald-50 text-emerald-800 border-emerald-200' :
           toast.type === 'error' ? 'bg-red-50 text-red-800 border-red-200' :
           'bg-blue-50 text-blue-800 border-blue-200'
         }`}>
-          {toast.type === 'success' && <Check size={16} />}
-          {toast.type === 'error' && <Trash2 size={16} />}
-          {toast.type === 'info' && <AlertCircle size={16} />}
-          {toast.message}
+          <div className="flex items-center gap-2">
+            {toast.type === 'success' && <Check size={16} />}
+            {toast.type === 'error' && <Trash2 size={16} />}
+            {toast.type === 'info' && <AlertCircle size={16} />}
+            <span>{toast.message}</span>
+          </div>
+          <div className="pl-2 border-l border-current/20 flex items-center" title="Notifications are permanently muted">
+            <VolumeX size={14} className="opacity-60" />
+          </div>
         </div>
       )}
 
