@@ -90,8 +90,8 @@ export default function App() {
   const progress = totalCount === 0 ? 0 : Math.round((completedCount / totalCount) * 100);
 
   return (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
-      <div className="w-full max-w-lg bg-white rounded-2xl shadow-xl overflow-hidden">
+    <div className="min-h-screen bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-indigo-100 via-blue-50 to-cyan-100 flex items-center justify-center p-4">
+      <div className="w-full max-w-lg bg-white/90 backdrop-blur-md rounded-3xl shadow-2xl border border-white/50 overflow-hidden">
         {/* Header */}
         <div className="bg-slate-900 p-6 text-white">
           <div className="flex items-center gap-3 mb-2">
